@@ -1,0 +1,20 @@
+{
+  "name": "ERC1155-Upgradeable",
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.14",
+    "@nomicfoundation/hardhat-ignition": "^3.1.8",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.7",
+    "@types/node": "^22.20.1",
+    "ethers": "^6.17.0",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.9.1",
+    "typescript": "~6.0.3",
+    "viem": "^2.55.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1",
+    "@openzeppelin/contracts-upgradeable": "^5.6.1"
+  }
+}
