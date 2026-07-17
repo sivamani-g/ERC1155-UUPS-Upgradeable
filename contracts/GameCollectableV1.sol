@@ -8,13 +8,13 @@ contract GameCollectableV1 is ERC1155 {
         ERC1155("https://example.com/{id}.json")
     {}
 
-    function mint(
-        address account,
-        uint256 id,
-        uint256 amount
-    ) public {
-        _mint(account, id, amount, "");
-    }
+  function mint(
+    address to,
+    uint256 id,
+    uint256 amount
+) public virtual {
+    _mint(to, id, amount, "");
+}
 
     function burn(
         address account,

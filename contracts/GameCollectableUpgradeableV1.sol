@@ -19,14 +19,13 @@ contract GameCollectableUpgradeableV1
         __ERC1155_init("https://example.com/{id}.json");
         __Ownable_init(msg.sender);
     }
-
-    function mint(
-        address account,
-        uint256 id,
-        uint256 amount
-    ) public {
-        _mint(account, id, amount, "");
-    }
+function mint(
+    address to,
+    uint256 id,
+    uint256 amount
+) public virtual {
+    _mint(to, id, amount, "");
+}
 
     function _authorizeUpgrade(
         address newImplementation
